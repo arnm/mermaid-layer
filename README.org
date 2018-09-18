@@ -1,4 +1,26 @@
+#+TITLE: mermaid-layer
 
-# mermaid-layer
+Spacemacs layer to initialize [[https://github.com/arnm/ob-mermaid][ob-mermaid]].
 
-Spacemacs layer for ob-mermaid
+* Usage
+
+1. Clone layer into `~/.emacs.d/private`:
+
+  #+begin_src sh
+  git clone git@github.com:arnm/ob-mermaid.git ~/.emacs.d/private/mermaid
+  #+end_src
+2. Add `mermaid` layer to `dotspacemacs-configuration-layers`
+3. Specify `mmdc` executable path:
+
+  #+begin_src lisp
+  (setq ob-mermaid-cli-path "/your-installating-path/node_modules/.bin/mmdc")
+  #+end_src
+4. Open `org-mode` buffer and create a `org-babel` source block:
+
+  #+begin_src mermaid :file test.png
+  sequenceDiagram
+  A-->B: Works!
+  #+end_src
+5. Exporting the org-mode document or invoking the `org-babel-execute-src-block` function to generate diagram.
+
+
