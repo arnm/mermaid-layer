@@ -7,7 +7,7 @@ Spacemacs layer to initialize [[https://github.com/arnm/ob-mermaid][ob-mermaid]]
 1. Clone layer into =~/.emacs.d/private=:
 
   #+begin_src sh
-  git clone git@github.com:arnm/ob-mermaid.git ~/.emacs.d/private/mermaid
+  git clone git@github.com:arnm/mermaid-layer.git ~/.emacs.d/private/mermaid
   #+end_src
 2. Add =mermaid= layer to =dotspacemacs-configuration-layers=
 3. Specify =mmdc= executable path:
